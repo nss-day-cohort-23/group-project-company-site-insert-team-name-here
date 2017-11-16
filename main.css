@@ -1,3 +1,8 @@
 body {
     background-color: goldenrod;
 }
+
+footer {
+position: absolute;
+bottom: 0;
+}
