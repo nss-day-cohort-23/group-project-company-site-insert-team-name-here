@@ -72,6 +72,9 @@ body {
 
 
 /***** JS CARD *****/
+img {
+  width: inherit;
+}
 
 .card {
   background: rgba(255, 255, 255, 0.3);
@@ -87,6 +90,7 @@ body {
 
 .image {
   display: block;
+  max-width: 200px;
   margin: auto;
 }
 
