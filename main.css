@@ -9,3 +9,31 @@ footer {
     height: 60px;
     background: #;
 }
+
+.card {
+  background: rgba(255, 255, 255, 0.3);
+  border: 3px solid black;
+  height: 400px;
+  margin: 5px;
+  width: 25%;
+}
+
+.description {
+  padding: 3px;
+}
+
+.image {
+  display: block;
+  margin: auto;
+}
+
+.product-name {
+  background: rgba(255, 255, 255, 0.33);
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.product-name > h3 {
+  margin: 0;
+  padding: 15px;
+}
