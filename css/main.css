@@ -5,8 +5,7 @@ html {
 }
 
 body {
-
-    background-color: goldenrod;
+    background-color: #afceff;
     display: flex;
     flex-direction: column;
     padding: 0;
