@@ -48,3 +48,19 @@ var products = [
     URL: "example.com"
   }
 ]
+
+var productsCount = products.length;
+
+var productsElement = document.getElementById("newProducts");
+
+for (var i = 0; i < productsCount; i += 1) {
+  productsElement.innerHTML += `<p>${products[i]["name"]}</p>`;
+  productsElement.innerHTML += `<p>${products[i]["description"]}</p>`;
+  productsElement.innerHTML += `<p>${products[i]["price"]}</p>`;
+  productsElement.innerHTML += `<p>${products[i]["URL"]}</p>`;
+}
+
+
+
+
+
