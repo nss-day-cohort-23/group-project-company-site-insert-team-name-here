@@ -1,14 +1,60 @@
+
 body {
     background-color:rgb(221, 207, 207);
 }
 
+/**** NAV BAR ****/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display; block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a:active {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+/***** MAIN *****/
+
+.main {
+  margin-top: 50px;
+}
+
+
+
+/***** FOOTER *****/
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: #;
+    background-color: #333;
 }
+
+
+
+
+
+/***** JS CARD *****/
 
 .card {
   background: rgba(255, 255, 255, 0.3);
