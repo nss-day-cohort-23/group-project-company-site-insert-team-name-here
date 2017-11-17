@@ -90,6 +90,6 @@ cOneDivThree.className += "price";
 cardOne.appendChild(cOneDivThree);
 var priceOne = document.createElement("p");
 cOneDivThree.appendChild(priceOne);
-var numPriceOne = document.createTextNode("$" + `${products[i]["price"]}`);
+var numPriceOne = document.createTextNode("Price: $" + `${products[i]["price"]}`);
 priceOne.appendChild(numPriceOne);
 }
