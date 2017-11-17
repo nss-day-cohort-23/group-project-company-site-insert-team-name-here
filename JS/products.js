@@ -1,13 +1,13 @@
 var products = [
   fairyOne = {
     name: "Navi",
-    description: "Navi is a fairy who annoyingly, persistently, naggingly guides Link throughout Hyrule. Her navigation skills are unparalleled."
+    description: "Navi is a fairy who annoyingly, persistently, naggingly guides Link throughout Hyrule. Her navigation skills are unparalleled.",
     price: 5750,
     URL: "assets/navi.png"
   },
   fairyTwo = {
     name: "Tinker Bell",
-    description: "Tinker Bell is a fairy who assists and protects Peter Pan from Captain Hook. Her pixie dust gives one the power of flight."
+    description: "Tinker Bell is a fairy who assists and protects Peter Pan from Captain Hook. Her pixie dust gives one the power of flight.",
     price: 7500,
     URL: "assets/tinkerbell.gif"
   },
