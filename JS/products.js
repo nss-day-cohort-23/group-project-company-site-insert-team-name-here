@@ -59,8 +59,3 @@ for (var i = 0; i < productsCount; i += 1) {
   productsElement.innerHTML += `<p>${products[i]["price"]}</p>`;
   productsElement.innerHTML += `<p>${products[i]["URL"]}</p>`;
 }
-
-
-
-
-
