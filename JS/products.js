@@ -24,28 +24,28 @@ var products = [
     URL: "assets/godmother.jpg"
   },
   fairyFive = {
-    name: "Place Holder Name",
-    description: "Description",
+    name: "Blue Fairy",
+    description: "The Blue Fairy transformed Pinocchio into a living being, and later into a real boy. She also helped Pinocchio and Jiminy Cricket throughout their adventures, both directly and from afar.",
     price: 199.99,
-    URL: "#"
+    URL: "assets/Bluefairy.png"
   },
   fairySix = {
-    name: "Place Holder Name",
+    name: "Puck",
     description: "Description",
     price: 479.99,
-    URL: "#"
+    URL: "assets/Puck.jpg"
   },
   fairySeven = {
-    name: "Place Holder Name",
-    description: "Description",
+    name: "Wanda",
+    description: "Wanda is the 'fairly odd' mother of Timmy Turner in the cartoon 'The Fairly Odd Parents.' She helps to grant Timmy's wishes and ultimately keeps Timmy and her husband Cosmo out of trouble.",
     price: 698.99,
-    URL: "#"
+    URL: "assets/Wanda.jpg"
   },
   fairyEight = {
-    name: "Place Holder Name",
-    description: "Description",
+    name: "Cosmo",
+    description: "Cosmo is the 'fairly odd' father of Timmy Turner in the cartoon 'The Fairly Odd Parents.' He enjoys indulging Timmy's wishes that probably shouldn't be granted...but also helps to get him out of trouble and give him anything he wants!",
     price: 1999.99,
-    URL: "#"
+    URL: "assets/Cosmo.jpg"
   }
 ]
 
