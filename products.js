@@ -3,49 +3,49 @@ var products = [
     name: "Basic Fairy",
     description: "Fairy for people on a budget",
     price: 19.99,
-    URL: "example.com"
+    URL: "#"
   },
   fairyTwo = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 39.99,
+    URL: "#"
   },
   fairyThree = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 59.99,
+    URL: "#"
   },
   fairyFour = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 89.99,
+    URL: "#"
   },
   fairyFive = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 199.99,
+    URL: "#"
   },
   fairySix = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 479.99,
+    URL: "#"
   },
   fairySeven = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 698.99,
+    URL: "#"
   },
   fairyEight = {
-    name: "Basic Fairy",
+    name: "Place Holder Name",
     description: "Description",
-    price: 19.99,
-    URL: "example.com"
+    price: 1999.99,
+    URL: "#"
   }
 ]
 
