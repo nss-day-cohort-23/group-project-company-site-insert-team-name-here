@@ -43,6 +43,11 @@ body {
 
 
 /***** MAIN *****/
+h1 {
+  background: rgba(255, 255, 255, .5);
+  border: 1px solid black;
+  text-align: center;
+}
 
 .main {
   margin-top: 50px;
@@ -72,25 +77,35 @@ body {
 
 /***** JS CARD *****/
 img {
+  max-height: 300px;
+  max-width: 150px;
+  padding: 15px;
   width: inherit;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.3);
   border: 3px solid black;
-  height: 400px;
-  margin: 5px;
-  width: 25%;
+  display: inline-flex;
+  flex-direction: column;
+  height: 600px;
+  margin: .5vw;
+  width: 25vw;
 }
 
+
 .description {
-  padding: 3px;
+  padding: 15px;
 }
 
 .image {
   display: block;
-  max-width: 200px;
+  max-width: 150px;
   margin: auto;
+}
+
+.price {
+  padding: 15px;
 }
 
 .product-name {
@@ -102,4 +117,9 @@ img {
 .product-name > h3 {
   margin: 0;
   padding: 15px;
+}
+
+#newProducts {
+  margin: auto;
+  width: 80vw;
 }
