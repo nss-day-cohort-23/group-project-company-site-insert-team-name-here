@@ -1,27 +1,27 @@
 var products = [
   fairyOne = {
-    name: "Basic Fairy",
-    description: "Fairy for people on a budget",
-    price: 19.99,
-    URL: "#"
+    name: "Navi",
+    description: "Navi is a fairy who annoyingly, persistently, naggingly guides Link throughout Hyrule. Her navigation skills are unparalleled."
+    price: 5750,
+    URL: "assets/navi.png"
   },
   fairyTwo = {
-    name: "Place Holder Name",
-    description: "Description",
-    price: 39.99,
-    URL: "#"
+    name: "Tinker Bell",
+    description: "Tinker Bell is a fairy who assists and protects Peter Pan from Captain Hook. Her pixie dust gives one the power of flight."
+    price: 7500,
+    URL: "assets/tinkerbell.gif"
   },
   fairyThree = {
-    name: "Place Holder Name",
-    description: "Description",
-    price: 59.99,
-    URL: "#"
+    name: "Thumbelina",
+    description: "Thumbelina is a tiny girl well-known for her misadventures with appearance- and marriage-minded toads, moles, and cockchafers. Her looks are deadly.",
+    price: 4300,
+    URL: "assets/thumbelina.jpg"
   },
   fairyFour = {
-    name: "Place Holder Name",
-    description: "Description",
-    price: 89.99,
-    URL: "#"
+    name: "Fairy Godmother",
+    description: "The Fairy Godmother endows Cinderella with the most exotic, unique, wild night of her life. Her cobbling and ideas about sufficient transportation could be improved",
+    price: 2000,
+    URL: "assets/godmother.jpg"
   },
   fairyFive = {
     name: "Place Holder Name",
