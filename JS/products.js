@@ -1,95 +1,76 @@
 var products = [
   fairyOne = {
-    name: "Navi",
-    description: "Navi is a fairy who annoyingly, persistently, naggingly guides Link throughout Hyrule. Her navigation skills are unparalleled.",
-    price: 5750,
-    URL: "assets/navi.png"
+    name: ["Navi", "h3", "product-name"],
+    img: ["assets/navi.png", "img", "image"],
+    description: ["Navi is a fairy who annoyingly, persistently, naggingly guides Link throughout Hyrule. Her navigation skills are unparalleled.", "p", "description"],
+    price: [5750, "p", "price"]
   },
   fairyTwo = {
-    name: "Tinker Bell",
-    description: "Tinker Bell is a fairy who assists and protects Peter Pan from Captain Hook. Her pixie dust gives one the power of flight.",
-    price: 7500,
-    URL: "assets/tinkerbell.gif"
+    name: ["Tinker Bell", "h3", "product-name"],
+    img: ["assets/tinkerbell.gif", "img", "image"],
+    description: ["Tinker Bell is a fairy who assists and protects Peter Pan from Captain Hook. Her pixie dust gives one the power of flight.", "p", "description"],
+    price: [7500, "p", "price"]
   },
   fairyThree = {
-    name: "Thumbelina",
-    description: "Thumbelina is a tiny girl well-known for her misadventures with appearance- and marriage-minded toads, moles, and cockchafers. Her looks are deadly.",
-    price: 4300,
-    URL: "assets/thumbelina.jpg"
+    name: ["Thumbelina", "h3", "product-name"],
+    img: ["assets/thumbelina.jpg", "img", "image"],
+    description: ["Thumbelina is a tiny girl well-known for her misadventures with appearance- and marriage-minded toads, moles, and cockchafers. Her looks are deadly.", "p", "description"],
+    price: [4300, "p", "price"]
   },
   fairyFour = {
-    name: "Fairy Godmother",
-    description: "The Fairy Godmother endows Cinderella with the most exotic, unique, wild night of her life. Her cobbling and ideas about sufficient transportation could be improved",
-    price: 2000,
-    URL: "assets/godmother.jpg"
+    name: ["Fairy Godmother", "h3", "product-name"],
+    img: ["assets/godmother.jpg", "img", "image"],
+    description: ["The Fairy Godmother endows Cinderella with the most exotic, unique, wild night of her life. Her cobbling and ideas about sufficient transportation could be improved", "p", "description"],
+    price: [2000, "p", "price"]
   },
   fairyFive = {
-    name: "Blue Fairy",
-    description: "The Blue Fairy transformed Pinocchio into a living being, and later into a real boy. She also helped Pinocchio and Jiminy Cricket throughout their adventures, both directly and from afar.",
-    price: 199.99,
-    URL: "assets/Bluefairy.png"
+    name: ["Blue Fairy", "h3", "product-name"],
+    img: ["assets/Bluefairy.png", "img", "image"],
+    description: ["The Blue Fairy transformed Pinocchio into a living being, and later into a real boy. She also helped Pinocchio and Jiminy Cricket throughout their adventures, both directly and from afar.", "p", "description"],
+    price: [199.99, "p", "price"]
   },
   fairySix = {
-    name: "Puck",
-    description: "Description",
-    price: 479.99,
-    URL: "assets/Puck.jpg"
+    name: ["Puck", "h3", "product-name"],
+    img: ["assets/Puck.jpg", "img", "image"],
+    description: ["What the Puck do you know?", "p", "description"],
+    price: [479.99, "p", "price"]
   },
   fairySeven = {
-    name: "Wanda",
-    description: "Wanda is the 'fairly odd' mother of Timmy Turner in the cartoon 'The Fairly Odd Parents.' She helps to grant Timmy's wishes and ultimately keeps Timmy and her husband Cosmo out of trouble.",
-    price: 698.99,
-    URL: "assets/Wanda.jpg"
+    name: ["Wanda", "h3", "product-name"],
+    img: ["assets/Wanda.jpg", "img", "image"],
+    description: ["Wanda is the 'fairly odd' mother of Timmy Turner in the cartoon 'The Fairly Odd Parents.' She helps to grant Timmy's wishes and ultimately keeps Timmy and her husband Cosmo out of trouble.", "p", "description"],
+    price: [698.99, "p", "price"]
   },
   fairyEight = {
-    name: "Cosmo",
-    description: "Cosmo is the 'fairly odd' father of Timmy Turner in the cartoon 'The Fairly Odd Parents.' He enjoys indulging Timmy's wishes that probably shouldn't be granted...but also helps to get him out of trouble and give him anything he wants!",
-    price: 1999.99,
-    URL: "assets/Cosmo.jpg"
+    name: ["Cosmo", "h3", "product-name"],
+    img: ["assets/Cosmo.jpg", "img", "image"],
+    description: ["Cosmo is the 'fairly odd' father of Timmy Turner in the cartoon 'The Fairly Odd Parents.' He enjoys indulging Timmy's wishes that probably shouldn't be granted...but also helps to get him out of trouble and give him anything he wants!", "p", "description"],
+    price: [1999.99, "p", "price"]
   }
-]
+];
 
-var productsCount = products.length;
+  const container = document.getElementById("newProducts");
 
-var productsElement = document.getElementById("newProducts");
+  for (let i = 0; i < products.length; i += 1) {
+    let cardElm = document.createElement("div");
+    cardElm.className = "card"
+    container.appendChild(cardElm);
 
-for (var i = 0; i < productsCount; i += 1) {
+    for (const prop in products[i]) {
+      let firstDiv = document.createElement("div");
+      firstDiv.className = products[i][prop][2];
 
+      let contentDiv = document.createElement(`${products[i][prop][1]}`);
 
-//----------------- First Card ---------------------
-var container = document.getElementById("newProducts");
-var cardOne = document.createElement("div");
-cardOne.className += "card";
-container.appendChild(cardOne);
-var cardOneDiv = document.createElement("div");
-cardOneDiv.className += "product-name";
-cardOne.appendChild(cardOneDiv);
-var cardOneName = document.createElement("h3");
-cardOneDiv.appendChild(cardOneName);
-var firstCardText = document.createTextNode(`${products[i]["name"]}`);
-cardOneName.appendChild(firstCardText);
-//--------image section-------
-var imgDivOne = document.createElement("div");
-imgDivOne.className += "image";
-cardOne.appendChild(imgDivOne);
-var cOneImg = document.createElement("img");
-imgDivOne.appendChild(cOneImg);
-cOneImg.src = `${products[i]["URL"]}`;
-cOneImg.setAttribute("alt", "Fairy One for Sale");
-//-----------item description----------
-var cOneDivTwo = document.createElement("div");
-cOneDivTwo.className += "description";
-cardOne.appendChild(cOneDivTwo);
-var descriptionOne = document.createElement("p");
-cOneDivTwo.appendChild(descriptionOne);
-var descriptionTextOne = document.createTextNode(`${products[i]["description"]}`);
-descriptionOne.appendChild(descriptionTextOne);
-//--------------$PRICE$--------------------
-var cOneDivThree = document.createElement("div");
-cOneDivThree.className += "price";
-cardOne.appendChild(cOneDivThree);
-var priceOne = document.createElement("p");
-cOneDivThree.appendChild(priceOne);
-var numPriceOne = document.createTextNode("Price: $" + `${products[i]["price"]}`);
-priceOne.appendChild(numPriceOne);
+      if (`${products[i][prop][1]}` === "img") {
+        contentDiv.src = `${products[i]["img"][0]}`;
+        contentDiv.setAttribute("alt", `Image of ${products[i]["name"][0]}`);
+      } else {
+        let textNode = document.createTextNode(`${products[i][prop][0]}`);
+        contentDiv.appendChild(textNode);
+      }
+
+      firstDiv.appendChild(contentDiv);
+      cardElm.appendChild(firstDiv);
+    }
 }
