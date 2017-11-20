@@ -27,7 +27,7 @@ var products = [
     name: ["Blue Fairy", "h3", "product-name"],
     img: ["assets/Bluefairy.png", "img", "image"],
     description: ["The Blue Fairy transformed Pinocchio into a living being, and later into a real boy. She also helped Pinocchio and Jiminy Cricket throughout their adventures, both directly and from afar.", "p", "description"],
-    price: ["Price: 199.99", "p", "price"]
+    price: ["Price: $199.99", "p", "price"]
   },
   fairySix = {
     name: ["Puck", "h3", "product-name"],
